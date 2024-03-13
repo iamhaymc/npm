@@ -1,2 +1,2 @@
 # npm
-Bundled ES libraries for the node and the browser
+ES libraries for the Node and the browser
