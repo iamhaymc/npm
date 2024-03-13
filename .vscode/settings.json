@@ -1,0 +1,15 @@
+{
+    "files.exclude": {
+        "**/.gitignore": false,
+        "**/node_modules": true,
+        "**/.editorconfig": true,
+        "**/.prettierignore": true,
+        "**/.prettierrc.json": true,
+        "**/package-lock.json": true,
+        "**/babel.config.js": true,
+        "**/jest.config.js": true,
+        "**/tsconfig.json": true,
+        "**/README.md": true,
+        "**/dist": true,
+    }
+}
