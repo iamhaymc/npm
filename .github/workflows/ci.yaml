@@ -27,7 +27,7 @@ jobs:
       - name: Setup GCC Summary
         shell: bash
         if: ${{ always() }}
-        run: echo gcc --version >> $GITHUB_STEP_SUMMARY
+        run: echo $(gcc --version) >> $GITHUB_STEP_SUMMARY
 
       # ------------------------------------------------------------------------
 
@@ -45,7 +45,7 @@ jobs:
       - name: Setup Python Summary
         shell: bash
         if: ${{ always() }}
-        run: echo python --version >> $GITHUB_STEP_SUMMARY
+        run: echo $(python --version) >> $GITHUB_STEP_SUMMARY
 
       # ------------------------------------------------------------------------
 
@@ -63,6 +63,6 @@ jobs:
       - name: Setup Node Summary
         shell: bash
         if: ${{ always() }}
-        run: echo node --version >> $GITHUB_STEP_SUMMARY
+        run: echo $(node --version) >> $GITHUB_STEP_SUMMARY
 
       # ------------------------------------------------------------------------
