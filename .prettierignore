@@ -1,5 +1,11 @@
 **/dist
-**/vendor
+**/.editorconfig
+**/.gitignore
 **/node_modules
 **/package-lock.json
+**/.prettierignore
+**/LICENSE
+**/.git
+**/*.txt
+**/*.py
 **/*.svg

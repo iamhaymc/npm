@@ -1,6 +1,0 @@
-{
-  "plugins": [
-    "@prettier/plugin-xml",
-    "@prettier/plugin-pug"
-  ]
-}

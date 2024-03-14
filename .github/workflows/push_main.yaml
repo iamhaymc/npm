@@ -46,7 +46,7 @@ jobs:
         if: ${{ always() }}
         uses: actions/setup-python@v5
         with:
-          python-version: '3.11'
+          python-version: "3.11"
           architecture: ${{ env.TARGET_ARCHITECTURE }}
 
       - name: Install Python packages

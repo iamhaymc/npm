@@ -1,0 +1,16 @@
+import { Socket, Http } from './build/bundle.mjs'
+
+_socket = Socket.open();
+
+_state = State.create({
+  name: 'globals',
+  initial: { socketCount: 0 },
+  actions: {
+    setSocketCount: (state, action) => state.socketCount = action.payload
+  }
+  })
+
+export main = (arg) ->
+  _socket.on('user_connect', (msg) => console.log(msg))
+  _socket.on('user_disconnect', (msg) => console.log(msg))
+  console.log(await Http.get('/'));

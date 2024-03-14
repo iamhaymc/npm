@@ -1,4 +1,8 @@
 {
+  "files.associations": {
+    "*.jo": "coffeescript",
+    "*.mjo": "coffeescript"
+  },
   "files.exclude": {
     "**/README*": false,
     "**/LICENSE*": true,
@@ -6,15 +10,19 @@
     "**/node_modules": true,
     "**/package-lock.json": true,
     "**/.editorconfig": true,
-    "**/.prettierignore": true,
-    "**/.prettierrc.json": true,
+    "**/.prettierignore": false,
+    "**/.prettierrc.json": false,
     "**/babel.config.js": true,
     "**/jest.config.js": true,
-    "**/tsconfig.json": true,
-    "**/dist": true,
+    "**/tsconfig.json": false,
+    "**/dist": true
   },
-  "files.associations": {
-    "*.jo": "coffeescript",
-    "*.mjo": "coffeescript",
-  }
+  "[python]": {
+    "editor.defaultFormatter": "ms-python.black-formatter",
+    "editor.formatOnSave": true,
+    "editor.codeActionsOnSave": {
+      "source.organizeImports": "explicit"
+    }
+  },
+  "isort.args": ["--profile", "black"]
 }

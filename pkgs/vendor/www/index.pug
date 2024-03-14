@@ -1,0 +1,32 @@
+doctype
+html(lang="en")
+  head
+    title MyPage
+    meta(charset="utf-8")
+    meta(
+      name="viewport",
+      content="width=device-width,user-scalable=no,minimum-scale=1,maximum-scale=1"
+    )
+    link(rel="icon", href="icon.svg", type="image/svg+xml")
+    link(
+      rel="stylesheet",
+      href="assets/bootstrap/dist/css/bootstrap-reboot.min.css"
+    )
+    link(
+      rel="stylesheet",
+      href="assets/bootstrap/dist/css/bootstrap-grid.min.css"
+    )
+    link(rel="stylesheet", href="assets/open-color/open-color.css")
+    link(rel="stylesheet", href="assets/@fontsource/open-sans/latin-400.css")
+    link(rel="stylesheet", href="assets/@fontsource/roboto-mono/latin-400.css")
+    link(rel="stylesheet", href="assets/@fontsource/eb-garamond/latin-400.css")
+    link(
+      rel="stylesheet",
+      href="assets/line-awesome/dist/line-awesome/css/line-awesome.min.css"
+    )
+    link(rel="stylesheet", href="assets/main.css")
+  body
+    main
+    script(type="module").
+      import { main } from "./assets/main.mjs";
+      addEventListener("DOMContentLoaded", async (_) => await main());

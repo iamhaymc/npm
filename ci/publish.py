@@ -1,10 +1,10 @@
 import os as _libos
-import sys as _libsys
-import requests as _libhttp
-import subprocess as _libproc
 import re as _libre
-
+import subprocess as _libproc
+import sys as _libsys
 from pathlib import Path
+
+import requests as _libhttp
 
 # --------------------------------------------------------------------------------------------------
 
