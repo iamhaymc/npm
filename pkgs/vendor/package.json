@@ -2,8 +2,5 @@
   "name": "@iamhaymc/vendor",
   "version": "1.1.0-alpha",
   "author": "iamhaymc",
-  "license": "MIT",
-  "type": "module",
-  "main": "dist/_index.js",
-  "types": "dist/_index.d.ts"
+  "license": "MIT"
 }
