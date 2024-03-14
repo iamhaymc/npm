@@ -1,9 +1,11 @@
 {
-    "recommendations": [
-        "editorconfig.editorconfig",
-        "dbaeumer.vscode-eslint",
-        "lkytal.coffeelinter",
-        "syler.sass-indented",
-        "cweijan.vscode-redis-client"
-    ]
+  "recommendations": [
+    "editorconfig.editorconfig",
+    "dbaeumer.vscode-eslint",
+    "lkytal.coffeelinter",
+    "prplx.coffeescript-formatter",
+    "ginie.pug2html",
+    "syler.sass-indented",
+    "cweijan.vscode-redis-client"
+  ]
 }

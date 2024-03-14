@@ -1,5 +1,5 @@
-import { nanoid, customAlphabet } from 'nanoid'
+import { nanoid, customAlphabet } from "nanoid";
 
 export function getNanoid() {
-  return nanoid()
-};
+  return nanoid();
+}

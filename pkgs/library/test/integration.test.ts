@@ -1,7 +1,7 @@
-import { getNanoid } from '../dist/_index'
+import { getNanoid } from "../dist/_index";
 
-describe('getNanoid', () => {
-  it('returns a string', () => {
-    expect(getNanoid()).toBeTruthy()
+describe("getNanoid", () => {
+  it("returns a string", () => {
+    expect(getNanoid()).toBeTruthy();
   });
 });

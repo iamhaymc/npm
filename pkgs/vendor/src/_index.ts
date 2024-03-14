@@ -1,1 +1,1 @@
-export { getNanoid } from './unique'
+export { getNanoid } from "./unique";
