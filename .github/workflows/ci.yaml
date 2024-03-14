@@ -23,6 +23,11 @@ jobs:
           version: latest
           platform: x64
 
+      - name: Output Summary
+        shell: bash
+        if: ${{ always() }}
+        run: echo hello World >> $GITHUB_STEP_SUMMARY
+
       # ------------------------------------------------------------------------
 
       - name: Setup Python
