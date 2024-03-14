@@ -26,7 +26,7 @@ jobs:
       - name: Output Summary
         shell: bash
         if: ${{ always() }}
-        run: echo Using GCC >> $GITHUB_STEP_SUMMARY
+       run: echo gcc --version >> $GITHUB_STEP_SUMMARY
 
       # ------------------------------------------------------------------------
 
@@ -39,7 +39,7 @@ jobs:
       - name: Output Summary
         shell: bash
         if: ${{ always() }}
-        run: echo Using Python >> $GITHUB_STEP_SUMMARY
+        run: echo python --version >> $GITHUB_STEP_SUMMARY
 
       # ------------------------------------------------------------------------
 
@@ -52,6 +52,6 @@ jobs:
       - name: Output Summary
         shell: bash
         if: ${{ always() }}
-        run: echo Using Node >> $GITHUB_STEP_SUMMARY
+        run: echo node --version >> $GITHUB_STEP_SUMMARY
 
       # ------------------------------------------------------------------------
