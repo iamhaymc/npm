@@ -2,7 +2,7 @@ import * as Fs from "fs";
 import * as Path from "path";
 import { default as glob } from "fast-glob";
 import * as prettier from "prettier";
-import { format as jofmt } from "coffee-fmt";
+import { format as formatCoffee } from "coffee-fmt";
 import { SassFormatter } from "sass-formatter";
 
 (async () => {
@@ -34,7 +34,7 @@ import { SassFormatter } from "sass-formatter";
           // Format with CoffeeScript formatter
           console.log(`Formatting (${prettierOptions.parser}): ${path}`);
           let code = Fs.readFileSync(path, "utf-8");
-          let fcode = jofmt(code, {
+          let fcode = formatCoffee(code, {
             tab: "  ",
             newLine: "\n",
             debug: false,

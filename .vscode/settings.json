@@ -10,11 +10,11 @@
     "**/node_modules": true,
     "**/package-lock.json": true,
     "**/.editorconfig": true,
-    "**/.prettierignore": false,
-    "**/.prettierrc.json": false,
+    "**/.prettierignore": true,
+    "**/.prettierrc.json": true,
     "**/babel.config.js": true,
     "**/jest.config.js": true,
-    "**/tsconfig.json": false,
+    "**/tsconfig.json": true,
     "**/dist": true
   },
   "[python]": {
