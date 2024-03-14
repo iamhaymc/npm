@@ -1,0 +1,62 @@
+name: push_main
+on:
+  push:
+    branches:
+      - main
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    env:
+      TARGET_ARCHITECTURE: x64
+    steps:
+      # ------------------------------------------------------------------------
+
+      - name: Checkout Repo
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          submodules: recursive
+
+      # ------------------------------------------------------------------------
+
+      # - name: Install GCC
+      #   if: ${{ always() }}
+      #   uses: egor-tensin/setup-gcc@v1
+      #   with:
+      #     version: latest
+      #     platform: ${{ env.TARGET_ARCHITECTURE }}
+
+      # ------------------------------------------------------------------------
+
+      # - name: Install Node
+      #   if: ${{ always() }}
+      #   uses: actions/setup-node@v4
+      #   with:
+      #     node-version: '20.11.1'
+      #     architecture: ${{ env.TARGET_ARCHITECTURE }}
+
+      # - name: Install Node packages
+      #   shell: bash
+      #   if: ${{ always() }}
+      #   run: npm install
+
+      # ------------------------------------------------------------------------
+
+      - name: Install Python
+        if: ${{ always() }}
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+          architecture: ${{ env.TARGET_ARCHITECTURE }}
+
+      - name: Install Python packages
+        shell: bash
+        if: ${{ always() }}
+        run: python -m pip install -r ci/pyreqs.txt
+
+      # ------------------------------------------------------------------------
+
+      - name: Publish NPM Packages
+        shell: bash
+        if: ${{ always() }}
+        run: echo $(python ci/publish.py) >> $GITHUB_STEP_SUMMARY
