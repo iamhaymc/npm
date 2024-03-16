@@ -11,8 +11,7 @@
     "test": "run-s _test-library _test-neural _test-three",
     "_test-library": "jest --config pkgs/library/jest.config.js",
     "_test-neural": "jest --config pkgs/neural/jest.config.js",
-    "_test-three": "jest --config pkgs/three/jest.config.js",
-    "format": "tsx ci/format.ts"
+    "_test-three": "jest --config pkgs/three/jest.config.js"
   },
   "devDependencies": {
     "@babel/core": "^7.24.0",
